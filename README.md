@@ -1,7 +1,17 @@
 # AXIR (An eXperiment In Reactivity)
 > Disclaimer: This was just something I implemented in a weekend and is incomplete
 
+#### A Counter example
+<video src="https://github.com/user-attachments/assets/87a16911-0b04-4fd4-b3d8-f6f5a7afaed7" controls></video>
+
 For a while now, I've wanted to implement the observer pattern and try using that to implement reactivity in javascript, no jsx, just plain javascript functions that are composed to build component trees, so that's what I finally got to do here. This is a tiny experiment to make a tiny ui library in javascript using the observer pattern 
+
+#### How to run
+- git clone the repo
+- `cd axir && pnpm install`
+- `./axir.ts` contains the reactivity primitives and ui components (so far it has only Div, Button and Text)
+- `./examples/Counter.ts` -  a simple counter 
+- `./examples/CountDownTimer.ts`  -  a countdown timer
 
 #### How is the reactivity implemented
 There are 3 reactivity primitives; `state()`, `effect()` and `computed()`
@@ -54,12 +64,3 @@ This is analogous to react's `useEffect()` and also carries a dependency array. 
 Currently there are 3 components; Div, Text and Button
 The idea was to have a component (function) for each html element. The function wires up that element to support the reactivity primites. If every primitive component is reactive, then combining them into more complex components should still produce something reactive
 
-#### How to run
-- git clone the repo
-- `cd axir && pnpm install`
-- `./axir.ts` contains the reactivity primitives and ui components (so far it has only Div, Button and Text)
-- `./examples/Counter.ts` -  a simple counter 
-- `./examples/CountDownTimer.ts`  -  a countdown timer
-
-#### A counter example
-[showcase](./public/axir_test_1.mp4)
