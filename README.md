@@ -61,4 +61,5 @@ The idea was to have a component (function) for each html element. The function 
 - `./examples/Counter.ts` -  a simple counter 
 - `./examples/CountDownTimer.ts`  -  a countdown timer
 
-
+#### A Counter example
+<video src="https://github.com/user-attachments/assets/87a16911-0b04-4fd4-b3d8-f6f5a7afaed7" controls></video>
